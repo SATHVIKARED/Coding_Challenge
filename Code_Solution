@@ -1,0 +1,44 @@
+function apartmentHunting(blocks, reqs) {
+ let ourPriority = [];
+for (let eachBlock of blocks){
+let count = 0;
+for (let eachReq of req){
+if (eachBlock[eachReq] ){
+count ++;
+//console.log(count)
+}
+
+}
+
+ourPriority.push(count);
+//console.log(ourPriority)
+}
+const allMaxPositionsPossible = Math.max(...ourPriority);
+//console.log(allMaxlPositionsPossible)
+const possiblePositions = [];
+for (let index in ourPriority){
+if (ourPriority[index] ===  allMaxPositionsPossible){
+possiblePositions.push(index);
+}
+//console.log(possiblePositions)
+}
+return possiblePositions[Math.floor(Math.random()*possiblePositions.length)];
+.
+}
+console.log(apartmentHunting(blocks,req))
+
+// Do not edit the line below.
+exports.apartmentHunting = apartmentHunting;
+
+
+
+
+
+
+
+
+
+
+
+
+
