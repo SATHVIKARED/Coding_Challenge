@@ -1,0 +1,13 @@
+EXPLANATION
+1.	We are taking two arguments for the function apartment hunting (blocks and requirements)
+2.	We declared the constant function ourPriority(which is empty)
+3.	We declared for(of) loop to iterate over blocks and we declared the count 
+4.	We declared one more for(of) inner loop to iterate over the requirements  if the block[requirement] is true then count will increase 
+and this count value after counting the number of requirements present (true’s) will be pushed into the ourPriority by the push function . Then the count value will be made to zero so that it will initialized again to count the number of requirements present in the next block again this count value will be pushed into the ourPriority. Like this we will be pushing the number of requirements present in the each block to the ourPriority .  we will get ourPriority here for given case : [1,1,2,2,]
+5.	Next we will use the Max function to get the maximum values from the ourPriority list  we assigned them to the allMaxPositionsPossible we will get allMaxPositionsPossible = [2,2] Here we have more than 1 block which has the required requirements
+6.	Now again we  will run the for(of) loop over the ourPriority to get the required index of blocks where requirements are more . 
+7.	If(ourPriority[index] === allMaxPositionsPossible] the condition is true then we will push that index into the possiblePositions.
+8.	possiblePositions we will [2,3] ( block 3 and block 4 ) for the given challenge .
+9.	possiblePositions [Math.floor(Math.random()*possiblePositions.length ]to get the required index . Here once it will return index 2 and index 3 . floor function in javascript is used to round off to the integer value . random function will return the random value for the given range .
+10.	Here length is 2 so math.random function will return the value between 0 and 1 floor is used to round the value to integer . so we will get either 0 or 1 .  so the whole function above will return the values of possiblePostions[0] or possiblePositions[1] which means either 2 or 3 position.
+11.	Thank you for your challenge
